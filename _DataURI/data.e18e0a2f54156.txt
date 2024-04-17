@@ -1,0 +1,7 @@
+@font-face {
+font-display: block;
+font-family: wf_68931c0f22c14aca83daca846;
+src: url("https://static.wixstatic.com/ufonts/51d25a_68931c0f22c14aca83daca846cb68ce2/woff2/file.woff2") format("woff2"),
+url("https://static.wixstatic.com/ufonts/51d25a_68931c0f22c14aca83daca846cb68ce2/woff/file.woff") format("woff"),
+url("https://static.wixstatic.com/ufonts/51d25a_68931c0f22c14aca83daca846cb68ce2/ttf/file.ttf") format("ttf");
+}

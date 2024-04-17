@@ -1,0 +1,329 @@
+
+  .hide {
+    display: none !important;
+  }
+
+  .container {
+    position: absolute;
+    transition: left 0.3s ease-out, width 0.3s ease-out;
+    display: flex;
+    justify-content: flex-start;
+    width: 40px;
+    height: 40px;
+    left: -22px;
+  }
+
+  /* HOVER STYLES */
+  .container.hover {
+    left: 0;
+    width: 266px;
+  }
+
+  .container.hover .drawer {
+    left: 60px;
+    width: 205px;
+    overflow: visible;
+    position: inherit;
+  }
+
+  .container.hover .bubble {
+    left: 8px;
+  }
+
+  /* END HOVER STYLES */
+
+  /* DEFAULT OPEN STYLES */
+  /* .container {
+    left: 8px;
+  }
+
+  .container .drawer {
+    left: 55px;
+    position: inherit;
+  }
+
+  .container .bubble {
+    left: 0;
+  } */
+
+  /* END DEFAULT OPEN STYLES */
+
+  .button {
+    position: relative;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.11), 0px 6px 16px rgba(0, 0, 0, 0.2);
+    margin: auto 0;
+    transition: all 0.2s ease-out;
+  }
+
+  .bubble:hover {
+    cursor: pointer;
+  }
+
+  .bubble svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .drawer {
+    /* position: absolute;
+    left: -205px;
+    width: 205px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    height: 44px;
+    margin: auto;
+    transition: all 0.3s ease-out; */
+    overflow: hidden;
+    position: absolute;
+    left: 12px;
+    width: 0;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    height: 40px;
+    margin: auto;
+    transition: all 0.3s ease-out;
+  }
+
+  .options-container {
+    background: #13121C;
+    border-radius: 12px;
+    display: flex;
+    height: 100%;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.11), 0px 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .options-container div {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .options-container div svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .options-container div:hover {
+    cursor: pointer;
+    background: #555469;
+  }
+
+  #js-face-button {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  #js-image-button {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .power-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    border: solid 2px #BDBBC8;
+    background: #F7F7F7;
+    border-radius: 28px;
+    height: 28px;
+    width: 28px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.11), 0px 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .power-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .power-button:hover {
+    cursor: pointer;
+    border: solid 2px #FACBCB;
+  }
+
+  .power-button:hover svg path {
+    stroke: #F37E7E;
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal__content-container {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 234px;
+    width: 283px;
+    border-radius: 8px;
+    background: #ffffff;
+    margin: auto;
+  }
+
+  .modal__content {
+    padding: 30px;
+  }
+
+  .modal__content h1,
+  .modal__content p,
+  .modal__content span,
+  .modal__content button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .modal__content h1 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #13121C;
+  }
+
+  .modal__description {
+    font-size: 12px;
+    line-height: 20px;
+    max-width: 189px;
+    margin: auto;
+    margin-bottom: 24px;
+    color: #555469;
+  }
+
+  .modal__description .three-dots {
+    vertical-align: text-bottom;
+  }
+
+  .modal__button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .modal__button-container button {
+    width: 105px;
+    height: 32px;
+    border: 1px solid #BDBBC8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #555469;
+    background-color: #ffffff;
+  }
+
+  .modal__button-container button:hover {
+    cursor: pointer;
+  }
+
+  .modal__button-container button.hide-button {
+    border-color: #F37E7E;
+    background-color: #F37E7E;
+    color: #ffffff;
+  }
+
+  .modal__snooze {
+    font-size: 10px;
+    line-height: 20px;
+    color: #555469;
+  }
+
+  .modal__snooze span {
+    text-decoration: underline;
+    color: #F37E7E;
+  }
+
+  .modal__snooze span:hover {
+    cursor: pointer;
+  }
+
+  .tooltip {
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    top: -27px;
+  }
+
+  .tooltip.visible {
+    visibility: visible;
+    transition: visibility 0.4s ease-in;
+  }
+
+  .tooltip.dragging {
+    opacity: 0;
+    transition: opacity .2s ease-in;
+  }
+
+  .tooltip.visible.right {
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    left: 38px;
+  }
+
+  .tooltip.dragging {
+    opacity: 0;
+    transition: opacity .2s ease-in;
+  }
+
+  .tooltip-inner {
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 10px;
+    line-height: 17px;
+    background: #555469;
+    box-shadow: 0px 4px 12px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    padding: 2px 8px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;
+    white-space: nowrap;
+  }
+
+  .button.tooltip-disabled:hover .tooltip {
+    visibility: hidden;
+    transition: none;
+  }
